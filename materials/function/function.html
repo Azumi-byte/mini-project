@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi dan Prosedur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="animated">
+    <header>
+        <button class="back-to-home" onclick="window.location.href='../../index.html#materials'">Back</button>
+        <h3>Fungsi dan Prosedur</h3>
+        <button class="switch-theme">Switch Theme</button>
+    </header>
+    <main>
+        <div class="function-materials">
+            <h3>1. Pengertian Fungsi dan Prosedur</h3>
+            <p>
+                Fungsi dan prosedur adalah blok kode yang digunakan untuk menjalankan tugas 
+                tertentu dalam sebuah program. Dalam C++, istilah yang lebih umum digunakan 
+                adalah fungsi, sedangkan istilah prosedur merujuk pada fungsi yang tidak mengembalikan 
+                nilai (void function).
+            </p>
+            <h3>2. Manfaat Penggunaan Fungsi dan Prosedur</h3>
+            <ul>
+                <li>Memecah program menjadi bagian yang lebih kecil dan mudah dikelola.</li>
+                <li>Mengurangi duplikasi kode.</li>
+                <li>Meningkatkan keterbacaan dan pemeliharaan program.</li>
+                <li>Mempermudah debugging dan pengujian kode.</li>
+            </ul>
+            <h3>3. Jenis Fungsi dalam C++</h3>
+            <h4>a. Fungsi dengan Nilai Kembalian</h4>
+            <p class="pharaghraph-h4">Fungsi ini mengembalikan suatu nilai dengan menggunakan keyword <mark>return</mark>.</p>
+            <img class="image-h4" src="../../assets/function-example.png" alt="fungsi dengan nilai kembalian">
+            <h4>b. Fungsi tanpa Nilai Kembalian (Prosedur)</h4>
+            <p class="pharaghraph-h4">Fungsi ini tidak mengembalikan nilai dan menggunakan <mark>void </mark>sebagai tipe data.</p>
+            <img class="image-h4" src="../../assets/procedure-example.png" alt="fungsi tanpa nilai kemballian">
+            <h3>4. Parameter dalam Fungsi</h3>
+            <h4>a. Parameter dengan Nilai</h4>
+            <p class="pharaghraph-h4">
+                Parameter yang dikirim ke fungsi hanya sebagai salinan, sehingga perubahan dalam 
+                fungsi tidak mempengaruhi nilai aslinya.
+            </p>
+            <img class="image-h4" src="../../assets/parameter-value.png" alt="parameter dengan nilai">
+            <h4>b. Parameter dengan Referensi</h4>
+            <p class="pharaghraph-h4">Menggunakan referensi agar perubahan dalam fungsi juga mempengaruhi nilai asli.</p>
+            <img class="image-h4" src="../../assets/parameter-references.png" alt="parameter dengan referensi">
+            <h4>c. Parameter dengan Pointer</h4>
+            <p class="pharaghraph-h4">Menggunakan pointer untuk melewatkan alamat variabel.</p>
+            <img class="image-h4" src="../../assets/parameter-pointer.png" alt="parameter dengan pointer">
+            <h3>5. Fungsi Rekursif</h3>
+            <p>Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri untuk menyelesaikan suatu masalah.</p>
+            <img class="image-h4" src="../../assets/recursive-function.png" alt="fungsi rekursif">
+            <h3>6. Fungsi dalam Library Standar C++</h3>
+            <p>C++ memiliki banyak fungsi bawaan dalam pustaka standar, seperti:</p>
+            <ul>
+                <li><mark>sqrt(x)</mark>: menghitung akar kuadrat.</li>
+                <li><mark>pow(x, y)</mark>: menghitung <mark>x</mark> pangkat <mark>y</mark>.</li>
+                <li><mark>abs(x)</mark>: mengembalikan nilai mutlak.</li>
+            </ul>
+            <p>Contoh penggunaan:</p>
+            <img src="../../assets/libraries-in-c++.png" alt="library c++">
+        </div>
+    </main>
+    <script src="../tipe-data/script.js"></script>
+</body>
+</html>

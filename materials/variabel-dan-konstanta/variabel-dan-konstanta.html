@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabel dan Konstanta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="animated">
+    <header>
+        <button class="back-to-home" onclick="window.location.href='../../index.html#materials'">Back</button>
+        <h3>Variabel dan Konstanta</h3>
+        <button class="switch-theme">Switch Theme</button>
+    </header>
+    <main>
+        <div class="variable-materials">
+            <h3>1. Variabel dalam C++</h3>
+            <h4>a. Pengertian Variabel</h4>
+            <p class="pharaghraph-h4">Variabel adalah tempat penyimpanan data dalam memori yang memiliki nama dan tipe data tertentu.</p>
+            <h4>b. Deklarasi dan Inisialisasi Variabel</h4>
+            <p class="pharaghraph-h4">Di C++, variabel harus dideklarasikan sebelum digunakan. Format umum deklarasi variabel:</p>
+            <img class="image-h4" src="../../assets/deklarasi-variabel.png" alt="deklarasi variabel">
+            <p class="pharaghraph-h4">Contoh:</p>
+            <img class="image-h4" src="../../assets/example-of-declaration-variable.png" alt="contoh deklarasi variabel">
+            <h4>c. Aturan Penamaan Variabel</h4>
+            <ul>
+                <li>Hanya boleh mengandung huruf, angka, dan garis bawah (_).</li>
+                <li>Harus dimulai dengan huruf atau garis bawah (_), tidak bisa dengan angka.</li>
+                <li>Tidak boleh menggunakan kata kunci C++ (seperti int, float, return, dll.).</li>
+            </ul>
+            <h4>d. Jenis - Jenis Variabel</h4>
+            <ul>
+                <li>Variabel Lokal: Hanya dapat digunakan dalam fungsi atau blok tempat dideklarasikan.</li>
+                <li>Variabel Global: Dideklarasikan di luar fungsi dan dapat diakses oleh seluruh bagian program.</li>
+                <li>Variabel Statis: Nilainya tetap ada dalam memori sepanjang program berjalan.</li>
+                <li>Variabel Register: Disimpan dalam register CPU untuk akses lebih cepat.</li>
+            </ul>
+            <p class="pharaghraph-h4">Contoh penggunaan variabel global dan variabel lokal:</p>
+            <img class="image-h4" src="../../assets/local-and-global-variable.png" alt="variabel lokal dan global">
+            <h3>2. Konstanta dalam C++</h3>
+            <h4>a. Pengertian Konstanta</h4>
+            <p class="pharaghraph-h4">Konstanta adalah nilai tetap yang tidak dapat diubah selama program berjalan.</p>
+            <h4>b. Cara Mendeklarasikan Konstanta</h4>
+            <p class="pharaghraph-h4">Menggunakan const:</p>
+            <img class="image-h4" src="../../assets/const-declaration.png" alt="cara mendeklarasikan konstanta menggunakan const">
+            <p class="image-h4">Menggunakan #define:</p>
+            <img class="image-h4" src="../../assets/define-declaration.png" alt="define">
+            <p class="pharaghraph-h4">Perbedaan const dan define</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Perbedaan</th>
+                        <th>Const</th>
+                        <th>#define</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tipe data</td>
+                        <td>Memiliki tipe data</td>
+                        <td>Tidak memiliki tipe data</td>
+                    </tr>
+                    <tr>
+                        <td>Penggunaan</td>
+                        <td>Berlaku dalam lingkup blok kode</td>
+                        <td>Berlaku di seluruh file</td>
+                    </tr>
+                    <tr>
+                        <td>Keamanan</td>
+                        <td>Lebih aman karena dicek saat kompilasi</td>
+                        <td>Tidak dicek saat kompilasi</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="pharaghraph-h4">Contoh penggunaan const:</p>
+            <img class="image-h4" src="../../assets/example-of-const-usage.png" alt="contoh penggunaan const">
+        </div>
+    </main>
+    <script src="../tipe-data/script.js"></script>
+</body>
+</html>

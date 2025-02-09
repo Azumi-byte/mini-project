@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="animated">
+    <header>
+        <button class="back-to-home" onclick="window.location.href='../../index.html#materials'">Back</button>
+        <h3>Tipe Data Dasar</h3>
+        <button class="switch-theme">Switch Theme</button>
+    </header>
+    <main>
+        <div class="tipe-data-materials">
+            <h3>1. Pengertian Tipe Data</h3>
+            <p>Tipe data dalam C++ digunakan untuk menentukan jenis nilai yang dapat disimpan dalam 
+                suatu variabel. Tipe data menentukan ukuran dan jenis operasi yang dapat dilakukan 
+                pada data tersebut.
+            </p>
+            <h3>2. Macam - Macam Tipe Data dalam C++</h3>
+            <p>Secara umum, tipe data dalam C++ dapat dibagi menjadi beberapa kategori utama:</p>
+            <h4>a. Tipe Data Primitif</h4>
+            <table class="table-tipe-data">
+                <thead>
+                    <tr>
+                        <th>Tipe Data</th>
+                        <th>Ukuran (Byte)</th>
+                        <th>Rentang Nilai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>bool</td>
+                        <td>1</td>
+                        <td>true atau false</td>
+                    </tr>
+                    <tr>
+                        <td>char</td>
+                        <td>1</td>
+                        <td>-128 hingga 127 (signed) atau 0 hingga 255 (unsigned)</td>
+                    </tr>
+                    <tr>
+                        <td>int</td>
+                        <td>4</td>
+                        <td>-2,147,483,648 hingga 2,147,483,647</td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>4</td>
+                        <td>~3.4E-38 hingga ~3.4E+38</td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>8</td>
+                        <td>~1.7E-308 hingga ~1.7E+308</td>
+                    </tr>
+                    <tr>
+                        <td>void</td>
+                        <td>0</td>
+                        <td>Tidak memiliki nilai</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>b. Tipe Data Modifikasi</h4>
+            <p class="pharaghraph-h4">C++ menyediakan beberapa kata kunci untuk memodifikasi tipe data, seperti:</p>
+            <ul>
+                <li>Signed dan unsigned: Menentukan apakah tipe data mendukung nilai negatif.</li>
+                <li>Short dan long: Menentukan ukuran integer yang lebih kecil atau lebih besar.</li>
+            </ul>
+            <p class="pharaghraph-h4">Contoh penggunaan:</p>
+            <img class="image-h4" src="../../assets/unsigned-and-long.png" alt="unsigned dan long">
+            <h4>c. Tipe Data Struktur Kompleks</h4>
+            <p class="pharaghraph-h4">Tipe data ini memungkinkan penyimpanan beberapa nilai dengan berbagai tipe dalam satu entitas.</p>
+            <ul>
+                <li>Array: kumpulan data dengan tipe yang sama.</li>
+                <li>Struct: kumpulan variabel dengan tipe yang berbeda dalam satu objek.</li>
+                <li>Class: mirip dengan struct tetapi memiliki fitur tambahan seperti enkapsulasi dan pewarisan</li>
+                <li>Pointer: menyimpan alamat memori dari variabel lain.</li>
+            </ul>
+            <p class="pharaghraph-h4">Contoh penggunaan:</p>
+            <img class="image-h4" src="../../assets/struct.png" alt="struct">
+            <h3>3. Contoh Penggunaan Tipe Data dalam C++</h3>
+            <p>Berikut contoh kode program untuk mendemonstrasikan penggunaan tipe data:</p>
+            <img src="../../assets/usage-example.png" alt="contoh penggunaan">
+            <p></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

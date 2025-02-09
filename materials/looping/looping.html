@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan (Looping)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="animated">
+    <header>
+        <button class="back-to-home" onclick="window.location.href='../../index.html#materials'">Back</button>
+        <h3>Perulangan (Looping)</h3>
+        <button class="switch-theme">Switch Theme</button>
+    </header>
+    <main>
+        <div class="looping-materials">
+            <h3>1. Pengertian Looping</h3>
+            <p>
+                ooping (perulangan) dalam C++ digunakan untuk mengeksekusi sebuah blok kode secara
+                 berulang-ulang selama kondisi tertentu masih terpenuhi. Looping sangat berguna 
+                 untuk mengurangi kode yang berulang dan meningkatkan efisiensi program.
+            </p>
+            <h3>2. Jenis - Jenis Looping dalam C++</h3>
+            <p>Ada 3 jenis looping yaitu:</p>
+            <ul>
+                <li>For loop</li>
+                <li>While loop</li>
+                <li>Do-while loop</li>
+            </ul>
+            <h4>a. For Loop</h4>
+            <p class="pharaghraph-h4">For loop digunakan ketika jumlah iterasi sudah diketahui sebelumnya.<br>Sintaks:</p>
+            <img class="image-h4" src="../../assets/for-syntax.png" alt="sintaks dari for">
+            <p class="pharaghraph-h4">Contoh:</p>
+            <img class="image-h4" src="../../assets/for-example.png" alt="contoh dari for">
+            <h4>b. While Loop</h4>
+            <p class="pharaghraph-h4">
+                While loop digunakan ketika jumlah iterasi belum diketahui pasti, 
+                tetapi berdasarkan suatu kondisi yang diberikan.<br>Sintaks:
+            </p>
+            <img class="image-h4" src="../../assets/while-syntax.png" alt="sintaks dari while">
+            <p class="pharaghraph-h4">Contoh:</p>
+            <img class="image-h4" src="../../assets/while-example.png" alt="contoh dari while">
+            <h4>c. Do-While Loop</h4>
+            <p class="pharaghraph-h4">
+                Do-While loop mirip dengan while loop, tetapi memastikan bahwa blok kode dieksekusi 
+                minimal satu kali, meskipun kondisi awal tidak terpenuhi.<br>Sintaks:
+            </p>
+            <img class="image-h4" src="../../assets/do-while-syntax.png" alt="sintaks dari do-while">
+            <p class="pharaghraph-h4">Contoh:</p>
+            <img class="image-h4" src="../../assets/do-while-example.png" alt="contoh dari do-while">
+            <h3>3. Perbedaan dan Penggunaan</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jenis Loop</th>
+                        <th>Kondisi Diperiksa</th>
+                        <th>Eksekusi Minimal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>For loop</td>
+                        <td>Sebelum iterasi</td>
+                        <td>Bisa 0 kali</td>
+                    </tr>
+                    <tr>
+                        <td>While loop</td>
+                        <td>Sebelum iterasi</td>
+                        <td>Bisa 0 kali</td>
+                    </tr>
+                    <tr>
+                        <td>Do-While loop</td>
+                        <td>Setelah iterasi</td>
+                        <td>Minimal 1 kali</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="../tipe-data/script.js"></script>
+</body>
+</html>

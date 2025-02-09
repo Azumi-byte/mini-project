@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.switch-theme {
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid black;
+    width: 100px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button.switch-theme:hover {
+    background: #f8f9fa;
+    transform: scale(1.05);
+}
+
+button.back-to-home {
+    width: 60px;
+    height: 30px;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 5px;
+}
+
+button.back-to-home:hover {
+    background: #f8f9fa;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.function-materials {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.function-materials h4 {
+    padding-left: 10px;
+}
+
+.pharaghraph-h4 {
+    padding-left: 15px;
+}
+
+.image-h4 {
+    padding-left: 20px;
+}
+
+.array-materials:hover {
+    transform: translateY(-5px);
+}
+
+.dark-mode {
+    background-color: #1a1a2e;
+    color: #eaeaea;
+}
+
+.dark-mode header {
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+.dark-mode .function-materials {
+    background: #222;
+    color: #eaeaea;
+}
+
+.dark-mode button.switch-theme {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.dark-mode button.back-to-home {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animated.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

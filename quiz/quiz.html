@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="animated">
+    <header>
+        <button class="back-to-home" onclick="window.location.href='../index.html#quiz'">Back</button>
+        <h3>Quiz Session</h3>
+        <button class="switch-theme">Switch Theme</button>
+    </header>
+    <main>
+        <div class="quiz-page">
+           <div id="timer">Waktu tersisa: 02.00</div>
+           <div class="quiz-container">
+            <h2 id="question">Soal akan muncul di sini</h2>
+            <form id="quizForm">
+                <div id="options"></div>
+            </form>
+            <button onclick="prevQuestion()" id="prevBtn" disabled>Previous</button>
+            <button onclick="nextQuestion()" id="nextBtn">Next</button>
+            <button onclick="submitQuiz()" id="submitBtn" style="display: none;">Submit</button>
+        </div>
+        <div id="result" class="hidden">
+            <h2>Hasil Kuis</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Kembali ke Awal</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
